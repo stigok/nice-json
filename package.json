@@ -1,0 +1,36 @@
+{
+  "name": "nice-json",
+  "version": "0.0.0",
+  "description": "Ugly JSON in - nice JSON out",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --harmony --use-strict index.js",
+    "test": "xo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stigok/nice-json.git"
+  },
+  "keywords": [
+    "json",
+    "beautify",
+    "prettify",
+    "pretty",
+    "format",
+    "formatting",
+    "prettyprint"
+  ],
+  "author": "stigok",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/stigok/nice-json/issues"
+  },
+  "homepage": "https://github.com/stigok/nice-json#readme",
+  "xo": {
+    "space": true
+  },
+  "preferGlobal": true,
+  "dependencies": {
+    "winston": "^2.1.1"
+  }
+}
