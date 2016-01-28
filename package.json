@@ -29,8 +29,5 @@
   "xo": {
     "space": true
   },
-  "preferGlobal": true,
-  "dependencies": {
-    "winston": "^2.1.1"
-  }
+  "preferGlobal": true
 }
