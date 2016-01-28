@@ -29,5 +29,8 @@
   "xo": {
     "space": true
   },
-  "preferGlobal": true
+  "preferGlobal": true,
+  "dependencies": {
+    "bluebird": "^3.1.5"
+  }
 }
