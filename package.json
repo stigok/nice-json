@@ -1,6 +1,6 @@
 {
   "name": "nice-json",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Ugly JSON in - nice JSON out",
   "main": "index.js",
   "bin": "./bin/nice-json",
