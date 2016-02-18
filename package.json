@@ -3,8 +3,8 @@
   "version": "0.0.1",
   "description": "Ugly JSON in - nice JSON out",
   "main": "index.js",
+  "bin": "./bin/nice-json",
   "scripts": {
-    "start": "node --harmony --use-strict index.js",
     "test": "xo"
   },
   "repository": {

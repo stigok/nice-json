@@ -1,6 +1,8 @@
-#!/usr/bin/env node --harmony --use-strict
+#!/usr/bin/env node
 
-const nj = require('../index.js');
+'use strict';
+
+const nicejson = require('../index.js');
 const args = process.argv.splice(2);
 
 if (args.length !== 2) {
@@ -11,7 +13,7 @@ if (args.length !== 2) {
 const infile = args[0];
 const outfile = args[1];
 
-nj(infile, outfile).then(function () {
+nicejson(infile, outfile).then(function () {
   console.log('Wrote nice JSON to %s', outfile);
   process.exit(0);
 }, function (err) {
