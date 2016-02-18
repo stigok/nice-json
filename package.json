@@ -1,10 +1,10 @@
 {
   "name": "nice-json",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Ugly JSON in - nice JSON out",
   "main": "index.js",
+  "bin": "./bin/nice-json",
   "scripts": {
-    "start": "node --harmony --use-strict index.js",
     "test": "xo"
   },
   "repository": {
@@ -31,6 +31,6 @@
   },
   "preferGlobal": true,
   "dependencies": {
-    "winston": "^2.1.1"
+    "bluebird": "^3.1.5"
   }
 }

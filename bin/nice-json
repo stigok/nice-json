@@ -1,0 +1,31 @@
+#!/usr/bin/env node
+
+'use strict';
+
+const nicejson = require('../index.js');
+const args = process.argv.splice(2);
+
+if (args.length !== 2) {
+  console.error('Missing arguments. Usage: nice-json <infile> <outfile>');
+  process.exit(1);
+}
+
+const infile = args[0];
+const outfile = args[1];
+
+nicejson(infile, outfile).then(function () {
+  console.log('Wrote nice JSON to %s', outfile);
+  process.exit(0);
+}, function (err) {
+  var msg = 'Failed! ';
+  switch (err.code) {
+    case 'EEXIST':
+      msg += 'Outfile already exists.';
+      console.error(msg);
+      break;
+    default:
+      msg += 'An error occured';
+      console.error(msg, err);
+      break;
+  }
+});
